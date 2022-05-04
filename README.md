@@ -103,11 +103,12 @@ Au niveau du serveur, modifier le **package.json** pour ajouter un launcher du f
 Les 3 autres scripts permettent de déclencher après le build Heroku (service de déploiement) l’installation des dépendances du front et du front sur le serveur.
 
 ```bash
-"scripts":
+"scripts": {
   "client": "cd client && npm start",
     "install-front": "cd front && npm install",
     "build": "cd front && npm run build",
     "heroku-postbuild": "npm run install-front && npm run build",
+}
 ```
 
 
