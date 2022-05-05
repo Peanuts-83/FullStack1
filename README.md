@@ -150,6 +150,16 @@ heroku local
 heroku open
 ```
 
+Gestion Heroku
+ref : https://devcenter.heroku.com/articles/heroku-cli-commands
+ref : https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+
+Accès au bash du serveur :
+
+```bash
+heroku run bash -a <appName>
+```
+
 # React - create-react-app
 
 Dans le répertoire du projet Express, créer un projet React dans un répertoire front.
