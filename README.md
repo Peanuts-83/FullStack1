@@ -1,5 +1,7 @@
 # First fullstack deploy - Express / React - on Heroku server
 
+[![vignette](./vignette.png)](https://fullstack-peanuts83.herokuapp.com/)
+
 ref : HARDCODERS -  https://www.youtube.com/watch?v=klEs4oi3Igc
 
 L'objectif est de déployer un serveur nodeJS/Express ET une app React sur un serveur et de gérer les adressages dynamiques de routes API.
