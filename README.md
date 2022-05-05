@@ -141,7 +141,12 @@ heroku create fullstack-tom   // le nom est optionnel
 
 git push heroku main:main          // le nom de la branche locale:distante
 ```
+Il est important d'effectuer le push sur la branch *master* ou *main* d'heroku, toute autre branche ne déclenchant pas le build process!
+On peut délarer la branche locale du push et la branche distante sur heroku ainsi :
 
+```bash
+git push heroku localbranch:master
+```
 
 On peut alors vérifier le projet en local, puis en remote.
 
