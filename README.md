@@ -139,7 +139,7 @@ git commit -m "first commit"
 heroku login
 heroku create fullstack-tom   // le nom est optionnel
 
-git push heroku main          // le nom de la branche qui porte le projet en local
+git push heroku main:main          // le nom de la branche locale:distante
 ```
 
 
