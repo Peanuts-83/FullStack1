@@ -141,15 +141,30 @@ git commit -m "first commit"
 heroku login
 heroku create fullstack-tom   // le nom est optionnel
 
-git push heroku main          // le nom de la branche qui porte le projet en local
+git push heroku main:main          // le nom de la branche locale:distante
 ```
+Il est important d'effectuer le push sur la branch *master* ou *main* d'heroku, toute autre branche ne déclenchant pas le build process!
+On peut délarer la branche locale du push et la branche distante sur heroku ainsi :
 
+```bash
+git push heroku localbranch:master
+```
 
 On peut alors vérifier le projet en local, puis en remote.
 
 ```bash
 heroku local
 heroku open
+```
+
+Gestion Heroku
+ref : https://devcenter.heroku.com/articles/heroku-cli-commands
+ref : https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+
+Accès au bash du serveur :
+
+```bash
+heroku run bash -a <appName>
 ```
 
 # React - create-react-app
